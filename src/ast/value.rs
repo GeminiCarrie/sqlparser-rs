@@ -10,6 +10,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+use std::prelude::v1::*;
 #[cfg(feature = "bigdecimal")]
 use bigdecimal::BigDecimal;
 use std::fmt;
