@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 use chrono::{offset::FixedOffset, DateTime, NaiveDate, NaiveDateTime, NaiveTime};
 
 use uuid::Uuid;

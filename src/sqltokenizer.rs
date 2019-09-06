@@ -17,7 +17,7 @@
 //! The tokenizer (a.k.a. lexer) converts a string into a sequence of tokens.
 //!
 //! The tokens then form the input for the parser, which outputs an Abstract Syntax Tree (AST).
-
+use std::prelude::v1::*;
 use std::iter::Peekable;
 use std::str::Chars;
 

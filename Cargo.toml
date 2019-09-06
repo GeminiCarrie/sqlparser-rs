@@ -18,6 +18,15 @@ name = "sqlparser"
 path = "src/lib.rs"
 
 [dependencies]
-log = "0.4.5"
-chrono = "0.4.6"
-uuid = "0.7.1"
+log = { version = "0.4", git = "https://github.com/mesalock-linux/log-sgx" }
+chrono = {git="https://github.com/mesalock-linux/chrono-sgx"}
+uuid = {git = "https://github.com/mesalock-linux/uuid-sgx"}
+sgx_tstd = { rev = "v1.0.8", git = "https://github.com/baidu/rust-sgx-sdk.git",optional=true}
+
+[dev-dependencies]
+simple_logger = "1.0.1"
+#matches = "0.1"
+
+[features]
+default=["mesalock_sgx"]
+mesalock_sgx = ["sgx_tstd"]

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 //! SQL Abstract Syntax Tree (AST) types
-
+use std::prelude::v1::*;
 mod sql_operator;
 mod sqltype;
 mod table_key;

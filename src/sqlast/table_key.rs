@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 #[derive(Debug, PartialEq, Clone)]
 pub enum AlterOperation {
     AddConstraint(TableKey),

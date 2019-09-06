@@ -1,3 +1,4 @@
+use std::prelude::v1::*;
 /// make a listing of keywords
 /// with static str and their stringified value
 macro_rules! keyword {

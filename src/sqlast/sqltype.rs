@@ -1,4 +1,5 @@
 /// SQL datatypes for literals in SQL statements
+use std::prelude::v1::*;
 #[derive(Debug, Clone, PartialEq)]
 pub enum SQLType {
     /// Fixed-length character type e.g. CHAR(10)
